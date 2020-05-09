@@ -58,7 +58,6 @@
 		6EB240582466BD630066E858 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				6EB2405B2466BD630066E858 /* SceneDelegate.swift */,
 				6EB2405D2466BD630066E858 /* ContentView.swift */,
 				6EB2406D2466BDB60066E858 /* Supporting Files */,
 				6EB240672466BD640066E858 /* Info.plist */,
@@ -78,6 +77,7 @@
 		6EB2406D2466BDB60066E858 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6EB2405B2466BD630066E858 /* SceneDelegate.swift */,
 				6EB240592466BD630066E858 /* AppDelegate.swift */,
 				6EB2405F2466BD640066E858 /* Assets.xcassets */,
 				6EB240642466BD640066E858 /* LaunchScreen.storyboard */,
