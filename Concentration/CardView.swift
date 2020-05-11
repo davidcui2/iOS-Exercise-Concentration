@@ -16,7 +16,7 @@ struct CardView: View {
         Button(action: self.touchCard) {
             Text(card.isFaceUp ? card.value : "")
                 .font(.system(size: 60))
-                .frame(width: 80, height: 150)
+                .frame(minWidth: 60, idealWidth: 80, maxWidth: .infinity, minHeight: 65, idealHeight: 150, maxHeight: 150, alignment: .center) // minHeight to help with landscape mode
                 .background(card.isMatched ? Color.clear : Color.orange)
         }
     }
@@ -24,7 +24,6 @@ struct CardView: View {
 
 struct Card_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(card: Card(id: 1, value: "🎃"), touchCard: {})
-//            .previewLayout(PreviewLayout.fixed(width: 80, height: 150))
+        CardView(card: Card(isFaceUp: true, isMatched: false, id: 1, value: "🎃"), touchCard: {})
     }
 }

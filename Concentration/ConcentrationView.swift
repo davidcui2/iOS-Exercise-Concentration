@@ -18,11 +18,12 @@ struct ConcentrationView: View {
             
             VStack( spacing: 16) {
                 ForEach(game.cards.indices) {rIndex in
-                    HStack {
+                    HStack() {
                         ForEach(self.game.cards[rIndex].indices) {cIndex in
                             CardView(card: self.game.cards[rIndex][cIndex], touchCard: {self.game.flipCard(on: rIndex, at: cIndex)})
                         }
                     }
+                    .frame(maxWidth: .infinity)
                 }
                 
                 Spacer()
@@ -31,12 +32,19 @@ struct ConcentrationView: View {
                     .font(.largeTitle)
                     .foregroundColor(Color.orange)
             }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ConcentrationView()
+        Group {
+            ConcentrationView()
+
+            // Currently there's no way to use landscape mode in preview...
+            ConcentrationView()
+                .previewLayout(.fixed(width: 568, height: 320)) // iPhone SE landscape size
+        }
     }
 }
