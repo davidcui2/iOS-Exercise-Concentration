@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22B5B15D24694A11003E82FD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B5B15C24694A11003E82FD /* Card.swift */; };
+		22C025C124671FC6002E242B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C025C024671FC6002E242B /* CardView.swift */; };
+		22C025C52467324E002E242B /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C025C42467324E002E242B /* Concentration.swift */; };
+		22C262202469579900CE6295 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2621F2469579900CE6295 /* CardRow.swift */; };
 		6EB2405A2466BD630066E858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB240592466BD630066E858 /* AppDelegate.swift */; };
 		6EB2405C2466BD630066E858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2405B2466BD630066E858 /* SceneDelegate.swift */; };
-		6EB2405E2466BD630066E858 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2405D2466BD630066E858 /* ContentView.swift */; };
+		6EB2405E2466BD630066E858 /* ConcentrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2405D2466BD630066E858 /* ConcentrationView.swift */; };
 		6EB240602466BD640066E858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB2405F2466BD640066E858 /* Assets.xcassets */; };
 		6EB240632466BD640066E858 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB240622466BD640066E858 /* Preview Assets.xcassets */; };
 		6EB240662466BD640066E858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB240642466BD640066E858 /* LaunchScreen.storyboard */; };
@@ -18,10 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6EB240562466BD630066E858 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B5B15C24694A11003E82FD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		22C025C024671FC6002E242B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		22C025C42467324E002E242B /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		22C2621F2469579900CE6295 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
+		6EB240562466BD630066E858 /* Concentration App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Concentration App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB240592466BD630066E858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EB2405B2466BD630066E858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6EB2405D2466BD630066E858 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6EB2405D2466BD630066E858 /* ConcentrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationView.swift; sourceTree = "<group>"; };
 		6EB2405F2466BD640066E858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EB240622466BD640066E858 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6EB240652466BD640066E858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +50,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22B5B15B246949F7003E82FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22C025C42467324E002E242B /* Concentration.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22C025C324673230002E242B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22B5B15C24694A11003E82FD /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6EB2404D2466BD630066E858 = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +78,7 @@
 		6EB240572466BD630066E858 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6EB240562466BD630066E858 /* Concentration.app */,
+				6EB240562466BD630066E858 /* Concentration App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +86,11 @@
 		6EB240582466BD630066E858 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				6EB2405D2466BD630066E858 /* ContentView.swift */,
+				22B5B15B246949F7003E82FD /* ViewModel */,
+				22C025C324673230002E242B /* Model */,
+				6EB2405D2466BD630066E858 /* ConcentrationView.swift */,
+				22C025C024671FC6002E242B /* CardView.swift */,
+				22C2621F2469579900CE6295 /* CardRow.swift */,
 				6EB2406F2466C4730066E858 /* CircleImage.swift */,
 				6EB240712466C5610066E858 /* MapView.swift */,
 				6EB2406D2466BDB60066E858 /* Supporting Files */,
@@ -108,7 +136,7 @@
 			);
 			name = Concentration;
 			productName = Concentration;
-			productReference = 6EB240562466BD630066E858 /* Concentration.app */;
+			productReference = 6EB240562466BD630066E858 /* Concentration App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,10 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EB2405A2466BD630066E858 /* AppDelegate.swift in Sources */,
+				22C025C52467324E002E242B /* Concentration.swift in Sources */,
+				22C025C124671FC6002E242B /* CardView.swift in Sources */,
 				6EB240702466C4730066E858 /* CircleImage.swift in Sources */,
 				6EB240722466C5610066E858 /* MapView.swift in Sources */,
 				6EB2405C2466BD630066E858 /* SceneDelegate.swift in Sources */,
-				6EB2405E2466BD630066E858 /* ContentView.swift in Sources */,
+				6EB2405E2466BD630066E858 /* ConcentrationView.swift in Sources */,
+				22C262202469579900CE6295 /* CardRow.swift in Sources */,
+				22B5B15D24694A11003E82FD /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +343,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.genz.ios.exercise.Concentration;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.genz.ios.exercise.ConcentrationApp;
+				PRODUCT_NAME = "Concentration App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,8 +363,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.genz.ios.exercise.Concentration;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.genz.ios.exercise.ConcentrationApp;
+				PRODUCT_NAME = "Concentration App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
